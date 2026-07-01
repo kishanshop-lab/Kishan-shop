@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="payment-container">
+
+    <div class="payment-box">
+
+        <h1>💳 Secure Payment</h1>
+        <p>Complete your order safely.</p>
+
+        <form>
+
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter Your Full Name" required>
+
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter Your Email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter Mobile Number" required>
+
+            <label>Delivery Address</label>
+            <textarea rows="4" placeholder="Enter Your Address" required></textarea>
+
+            <h3>Select Payment Method</h3>
+
+            <div class="payment-option">
+                <label>
+                    <input type="radio" name="payment" value="Cash on Delivery" checked>
+                    Cash on Delivery
+                </label>
+            </div>
+
+            <div class="payment-option">
+                <label>
+                    <input type="radio" name="payment" value="UPI">
+                    UPI (Google Pay / PhonePe / Paytm)
+                </label>
+            </div>
+
+            <div class="payment-option">
+                <label>
+                    <input type="radio" name="payment" value="Debit/Credit Card">
+                    Debit / Credit Card
+                </label>
+            </div>
+
+            <div class="payment-option">
+                <label>
+                    <input type="radio" name="payment" value="Net Banking">
+                    Net Banking
+                </label>
+            </div>
+
+            <button class="pay-btn" type="button" onclick="placeOrder()">
+                Place Order
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<header>
+
+<div class="logo">
+<h1>KISHAN SHOP</h1>
+</div>
+
+<div class="search-box">
+
+<input type="text" id="searchInput" placeholder="Search Products...">
+
+<button onclick="searchProduct()">🔍 Search</button>
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="#products">Products</a>
+
+<a href="cart.html">🛒 Cart</a>
+
+<a href="wishlist.html">❤️ Wishlist</a>
+
+<a href="payment.html">Payment</a>
+
+<a href="login page.html">👤 Login</a>
+
+
+
+</nav>
+</header>
+<section class="hero">
+    <h2>Welcome</h2>
+    <p>Best Deals | Best Prices | Fast Delivery</p>
+    <button>Shop Now</button>
+</section>
+
+
+<section class="products" id="products">
+    
+    <div class="card">
+
+    <span class="sale">20% OFF</span>
+
+    <img src="https://via.placeholder.com/250x200" alt="">
+
+    <h3>Wireless Headphones</h3>
+
+    <p class="rating">⭐⭐⭐⭐☆ (4.5)</p>
+
+    <p class="price">
+        ₹1999
+        <del>₹2500</del>
+    </p>
+
+    <button onclick="addToCart('Wireless Headphones',1999)">
+        🛒 Add to Cart
+    </button>
+
+    <button class="wish-btn"
+        onclick="addWishlist('Wireless Headphones')">
+        ❤️ Wishlist
+    </button>
+
+</div>
+    
+<div class="card">
+
+    <span class="sale">15% OFF</span>
+
+    <img src="https://via.placeholder.com/250x200" alt="">
+
+    <h3>Smart Watch</h3>
+
+    <p class="rating">⭐⭐⭐⭐⭐ (4.8)</p>
+
+    <p class="price">
+        ₹2999
+        <del>₹3500</del>
+    </p>
+
+    <button onclick="addToCart('Smart Watch',2999)">
+        🛒 Add to Cart
+    </button>
+
+    <button class="wish-btn"
+        onclick="addWishlist('Smart Watch')">
+        ❤️ Wishlist
+    </button>
+
+</div>
+
+   <div class="card">
+
+    <span class="sale">25% OFF</span>
+
+    <img src="https://via.placeholder.com/250x200" alt="">
+
+    <h3>Sports Shoes</h3>
+
+    <p class="rating">⭐⭐⭐⭐☆ (4.6)</p>
+
+    <p class="price">
+        ₹3499
+        <del>₹4500</del>
+    </p>
+
+    <button onclick="addToCart('Sports Shoes',3499)">
+        🛒 Add to Cart
+    </button>
+
+    <button class="wish-btn"
+        onclick="addWishlist('Sports Shoes')">
+        ❤️ Wishlist
+    </button>
+
+</div>
+    <div class="card">
+
+    <span class="sale">30% OFF</span>
+
+    <img src="https://via.placeholder.com/250x200" alt="">
+
+    <h3>Bluetooth Speaker</h3>
+
+    <p class="rating">⭐⭐⭐⭐⭐ (4.9)</p>
+
+    <p class="price">
+        ₹1499
+        <del>₹2200</del>
+    </p>
+
+    <button onclick="addToCart('Bluetooth Speaker',1499)">
+        🛒 Add to Cart
+    </button>
+
+    <button class="wish-btn"
+        onclick="addWishlist('Bluetooth Speaker')">
+        ❤️ Wishlist
+    </button>
+
+</div>
+
+</section>
+
+<center>
+<a href="cart.html">
+    <button>🛒 View Cart</button>
+</a>
+</center>
+
+<a href="payment.html">
+    <button>Proceed to Payment</button>
+</a>
+<footer>
+    <p>© 2026 MyShop | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
